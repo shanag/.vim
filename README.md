@@ -4,11 +4,19 @@ These are my opinionated .vim settings.  I clone it to my home directory, then:
 
     $ ln -s ~/.vim/.vimrc ~/.vimrc
     $ ln -s ~/.vim/.gvimrc ~/.gvimrc
+    $ git submodule init
+    $ git submodule update
 
-## Uses submodules to manage plugins
+## Uses submodules to manage plugins. 
+
+To add a plugin:
 
     $ cd ~/.vim
     $ git submodule add <git-path-to-plugin> bundle/<plugin-name>
+
+To remove a plugin:
+
+    $ git rm bundle/<plugin-name>
 
 ## Note on jshint
 
@@ -32,3 +40,6 @@ Here is what I have in my ~/.jshintrc
 * http://github.com/kchmck/vim-coffee-script
 * http://github.com/pangloss/vim-javascript
 * https://github.com/sleistner/vim-jshint
+* https://github.com/groenewege/vim-less.git
+* https://github.com/tpope/vim-rails.git
+* https://github.com/slim-template/vim-slim.git
